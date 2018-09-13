@@ -11,15 +11,6 @@ public class LinkedList {
 		length = 0;
 	}
 	
-	public static void main(String[] args) {
-		LinkedList test = new LinkedList();
-		Node james = new Node(5);
-		test.addFirst(james);
-		Node mom = new Node(6);
-
-		test.printList();
-	}
-	
 	public void addFirst(Node someNode) {  
 		if (first != null) {
 			System.out.println("Error.  Please try another function");
@@ -50,5 +41,14 @@ public class LinkedList {
 			temp.printNode();
 			temp = temp.next;
 		}
+	}
+	
+	public static void main(String[] args) {
+		LinkedList test = new LinkedList();
+		Node james = new Node(5);
+		test.addFirst(james);
+		Node mom = new Node(6);
+
+		test.printList();
 	}
 }
